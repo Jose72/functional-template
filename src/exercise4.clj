@@ -1,7 +1,7 @@
 (ns exercise4)
 
-(defn summary
-  "Returns the sum of a sequence of numbers"
+(defn fibonacci
+  "Returns the nth element of the Fibonnacci sequence"
   [n]
-  (reduce + n)
+  (if (some #{n} '(0 1)) n (+ (fibonacci (- n 1)) (fibonacci (- n 2))))
   )

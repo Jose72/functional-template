@@ -1,12 +1,7 @@
 (ns exercise6)
 
-(defn average
-  [n x]
-  (/ (+ n x) 2)
-  )
-
-(defn faverage
-  "Returns the average of a sequence of numbers"
+(defn flast
+  "Return the last element of a sequence"
   [n]
-  (/ (reduce + n) (count n))
+  (last n)
   )

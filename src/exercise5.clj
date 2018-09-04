@@ -1,7 +1,7 @@
 (ns exercise5)
 
-(defn flast
-  "Return the last element of a sequence"
+(defn summary
+  "Returns the sum of a sequence of numbers"
   [n]
-  (last n)
+  (reduce + n)
   )
